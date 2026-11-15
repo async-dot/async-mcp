@@ -156,7 +156,7 @@ export const SCHEMAS = {
       owner: z.string().max(80).optional().describe("\"me\" for the person's own work, or a person key or name from people. Leave out when nobody was named. Never guess."),
       due_date: z.string().regex(/^\d{4}-\d{2}-\d{2}$/).optional().describe("YYYY-MM-DD. Only when a date was said or written."),
       why: z.string().max(300).optional().describe("The source in a few words, like \"Ada's email of 4 Nov: she asked for the logo files\". Shown to the person."),
-    }).strict()).max(IMPORT_LIMITS.tasks).optional().describe("Open work only: things still waiting to be done. Not finished work, not ideas."),
+    }).strict()).max(IMPORT_LIMITS.tasks).optional().describe("Open work only: things still waiting to be done today. Check newer messages, commits, merged or closed pull requests and replies first, and leave out anything already done, answered, merged, cancelled or decided. When unsure, leave it out. Not ideas."),
   }).strict(),
   import_meeting: z.object({
     title: z.string().min(1).max(120).describe("What the meeting was, like \"Harri Obi website: homepage changes\"."),
