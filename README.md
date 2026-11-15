@@ -31,13 +31,14 @@ Where that is enforced:
 Server: `https://async.adtivity.xyz/mcp`. Step-by-step for Claude, ChatGPT, Cursor and others: [docs/connect.md](docs/connect.md).
 Disconnect any time in Async under **You > Connected agents**. Access ends at once.
 
-## The Async skill
+## Automatic by default
 
-`plugin/skills/async-capture/SKILL.md` tells your AI when to update Async (work finished, started or promised)
-and that it only reports: you decide everything in Async with one tap.
+Connecting is all it takes. When your AI connects, the server sends it standing instructions (`INSTRUCTIONS` in
+`server/server.ts`): when work is finished, moved forward or promised, it quietly calls `capture`, and Async asks you
+one question to confirm. Nothing changes until you tap.
 
-- **Claude:** download it from Async (**Connect your AI > Make it automatic**) and upload it under Settings, Capabilities, Skills.
-- **Claude Code:** `/plugin marketplace add async-dot/async-mcp`, then `/plugin install async@async`.
+The same behaviour is also packaged as a skill, `plugin/skills/async-capture/SKILL.md`. You only need it for
+Claude Code: `/plugin marketplace add async-dot/async-mcp`, then `/plugin install async@async`.
 
 ## Security
 
