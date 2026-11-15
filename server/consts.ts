@@ -24,7 +24,7 @@ export function urls(cfg: Pick<Config, "publicUrl">) {
   const base = cfg.publicUrl;
   return {
     issuer: base,
-    resource: `${base}/mcp`,            // canonical: https://async.adtivity.xyz/mcp (vercel.json rewrites it to the function)
+    resource: `${base}/mcp`,            // canonical: https://useasync.ink/mcp (vercel.json rewrites it to the function)
     resourceAlt: `${base}/api/mcp`,     // the same server under the /api prefix
     authorize: `${base}/api/oauth/authorize`,
     token: `${base}/api/oauth/token`,

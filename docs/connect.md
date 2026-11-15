@@ -6,7 +6,7 @@ over. Anything it suggests waits in your **Review** list, marked with a robot an
 "via Claude (Ada's agent)", and only you can approve it. The one exception is `ask_on_task` and
 `give_on_task` (see below): they act at once, as you, and do not wait in Review.
 
-Server URL (production): `https://async.adtivity.xyz/mcp`
+Server URL (production): `https://useasync.ink/mcp`
 
 Sign-in is OAuth: the agent sends you to Async, you see who is asking and what it may do, and you press
 Allow. No API key to copy. Disconnect any time under **You > Connected agents**; that ends its access at once.
@@ -45,13 +45,13 @@ Async asks "Looks done. Send it to Ola?"; say "I'll book the bus Friday" and it'
 ## Claude (claude.ai and the desktop app)
 
 1. Settings, Connectors, **Add custom connector**.
-2. Name: `Async`. URL: `https://async.adtivity.xyz/mcp`. Leave any client ID and secret blank.
+2. Name: `Async`. URL: `https://useasync.ink/mcp`. Leave any client ID and secret blank.
 3. Connect. Your browser opens the Async consent screen; sign in and press **Allow**.
 
 ## Claude Code
 
 ```
-claude mcp add --transport http async https://async.adtivity.xyz/mcp
+claude mcp add --transport http async https://useasync.ink/mcp
 ```
 
 Then run `/mcp` inside Claude Code, pick `async` and choose Authenticate. The browser opens the
