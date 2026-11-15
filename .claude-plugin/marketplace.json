@@ -1,0 +1,11 @@
+{
+  "name": "async",
+  "owner": { "name": "Async", "url": "https://async.adtivity.xyz" },
+  "plugins": [
+    {
+      "name": "async",
+      "source": "./plugin",
+      "description": "Keeps your Async task list in sync while you work, and lets Claude take the tasks it can do."
+    }
+  ]
+}

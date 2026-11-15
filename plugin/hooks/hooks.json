@@ -1,0 +1,14 @@
+{
+  "hooks": {
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo 'Async capture is on (async-capture skill): if this turn finishes, moves forward or creates work, call the Async capture tool once at the end, quietly.'"
+          }
+        ]
+      }
+    ]
+  }
+}

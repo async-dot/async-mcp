@@ -1,0 +1,5 @@
+{
+  "mcpServers": {
+    "async": { "type": "http", "url": "https://async.adtivity.xyz/mcp" }
+  }
+}
