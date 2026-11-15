@@ -37,7 +37,7 @@ Async asks "Looks done. Send it to Ola?"; say "I'll book the bus Friday" and it'
 
 - **Claude app and desktop**: download the skill from Connect your AI in the web app
   (`/app/dl/async-capture.zip`) and add it in Claude's settings under Skills.
-- **Claude Code**: `/plugin marketplace add jaethecreator/async-app`, then `/plugin install async@async`.
+- **Claude Code**: `/plugin marketplace add async-dot/async-mcp`, then `/plugin install async@async`.
   The plugin (in `mcp/plugin`) adds the connector, the skill and a hook that reminds Claude every turn.
 - **ChatGPT and others**: add to custom instructions: "When I finish, start or commit to work, call the
   Async capture tool once at the end of your reply, quietly."

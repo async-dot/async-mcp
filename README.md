@@ -6,7 +6,7 @@ and the Async skill. MIT licensed.
 
 Async's core (the app, sync and the rest of the server) is private. The server code here calls into it, so
 this repository is for **reading and checking**, not for running on its own. It is copied from the code that
-runs in production (private revision `5d58196`, 15 November 2026).
+runs in production (private revision `a4034ad`, 15 November 2026).
 
 ## What an AI can and can't do
 
